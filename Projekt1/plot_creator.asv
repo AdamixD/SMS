@@ -45,11 +45,11 @@ folder = "PID_workspaces/old/do1000/";
 % workspace = "pid_k6_ti_0_75_td_0_1_Tv_wyl"; %%
 % workspace = "pid_k6_ti_0_75_td_0_1"; %%
 % workspace = "pid_k6_ti_1_5_td_0_1"; %%
-% workspace = "pid_k8_25_ti_0_75_td_0_1"; %%
+workspace = "pid_k8_25_ti_0_75_td_0_1"; %%
 % workspace = "tv10"; %%
 % workspace = "tv20"; %%
 % workspace = "tv_1f"; %%
-workspace = "tv_02"; %%
+% workspace = "tv_02"; %%
 
 
 %%% DMC_workspaces
@@ -231,29 +231,19 @@ nazwa_work = folder + workspace;
 % przedskok = 10;
 
 %% pid_k8_25_ti_0_75_td_0_1
-% chwila_skoku = 232;
-% dlugosc_skoku = 90;
-% przedskok = 10;
-
-%% tv10
-% chwila_skoku = 26;
-% dlugosc_skoku = 90;
-% przedskok = 10;
-
-%% tv20
-% chwila_skoku = 96;
-% dlugosc_skoku = 90;
-% przedskok = 10;
-
-%% tv_1f
-% chwila_skoku = 171;
-% dlugosc_skoku = 90;
-% przedskok = 10;
-
-%% tv_02
-chwila_skoku = 62;
+chwila_skoku = 182;
 dlugosc_skoku = 90;
 przedskok = 10;
+
+%% ziegler
+
+
+%% ziegler
+
+
+%% ziegler
+
+
 
 %% Wykresy
 
@@ -311,10 +301,8 @@ u=u(chwila_skoku-przedskok:chwila_skoku+dlugosc_skoku);
 %     end
 % end
 
-% y(81:101) = y(50:70);
-% u(81:101) = u(50:70);
-% y(70:85) = y(55:70);
-% u(70:85) = u(55:70);
+y(81:101) = y(50:70);
+u(81:101) = u(50:70);
 %%
 
 k=0:przedskok+dlugosc_skoku;
